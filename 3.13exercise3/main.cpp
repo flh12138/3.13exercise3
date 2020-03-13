@@ -17,6 +17,7 @@ void threshod_Mat(int th, void* data)
 
 int main()
 {
+
 	Mat srcMat;
 	Mat gryMat;
 	int lowTh = 30;
@@ -29,7 +30,7 @@ int main()
 		return 0;
 	}
 
-
+    //imshow (window_name, Image) ;
 	cvtColor(srcMat, gryMat, CV_BGR2GRAY);
 	imshow(window_name, gryMat);
 	createTrackbar(" threshold",
