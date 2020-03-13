@@ -22,12 +22,14 @@ int main()
 	int lowTh = 30;
 	int maxTh = 255;
 	srcMat = imread("E:\\PIC\\112.jpg");
+
 	if (!srcMat.data) //≈–∂œÕºœÒ «∑Ò‘ÿ»Î
 	{
 		cout << "ÕºœÒ‘ÿ»Î ß∞‹!" << endl;
 		return 0;
 	}
-	// imshow (window_ name, Image) ;
+
+
 	cvtColor(srcMat, gryMat, CV_BGR2GRAY);
 	imshow(window_name, gryMat);
 	createTrackbar(" threshold",
